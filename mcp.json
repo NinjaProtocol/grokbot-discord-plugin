@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "grok-discord": {
+      "type": "stdio",
+      "command": "bash",
+      "args": ["./bin/launch-mcp.sh"],
+      "env": {
+        "DISCORD_TOKEN": "${DISCORD_TOKEN}",
+        "DISCORD_GUILD_ID": "${DISCORD_GUILD_ID}",
+        "DISCORD_CHANNEL_IDS": "${DISCORD_CHANNEL_IDS}",
+        "DISCORD_ALLOWED_ROLE_IDS": "${DISCORD_ALLOWED_ROLE_IDS}",
+        "BOT_NAME_PREFIX": "${BOT_NAME_PREFIX}",
+        "GROK_WEBHOOK_URL": "${GROK_WEBHOOK_URL}",
+        "GROK_WEBHOOK_SECRET": "${GROK_WEBHOOK_SECRET}"
+      }
+    }
+  }
+}
