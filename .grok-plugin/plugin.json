@@ -1,0 +1,16 @@
+{
+  "name": "grok-discord",
+  "version": "1.0.3",
+  "description": "Connect any Grok Bot or Cursor agent to Discord. A long-running gateway receives messages; MCP tools send replies over REST.",
+  "author": {
+    "name": "NinjaProtocol",
+    "url": "https://github.com/NinjaProtocol"
+  },
+  "homepage": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "repository": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "license": "MIT",
+  "logo": "logo.png",
+  "keywords": ["discord", "grok-bot", "mcp", "gateway"],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "grok-discord",
+  "displayName": "Discord for Grok Bot",
+  "version": "1.0.3",
+  "description": "Connect any Grok Bot or Cursor agent to Discord. A long-running gateway receives messages; MCP tools send replies over REST.",
+  "author": {
+    "name": "NinjaProtocol"
+  },
+  "homepage": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "repository": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "license": "MIT",
+  "logo": "logo.png",
+  "keywords": [
+    "discord",
+    "grok-bot",
+    "cursor",
+    "mcp",
+    "gateway"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "DISCORD_TOKEN": {
+        "type": "string",
+        "title": "Discord bot token",
+        "description": "Bot token from the Discord Developer Portal. Never commit this value."
+      },
+      "DISCORD_GUILD_ID": {
+        "type": "string",
+        "title": "Discord server ID",
+        "description": "Snowflake ID of the one guild this bot may speak in."
+      },
+      "DISCORD_CHANNEL_IDS": {
+        "type": "string",
+        "title": "Allowlisted channel IDs",
+        "description": "Comma-separated parent channel snowflakes. DMs and other channels are ignored."
+      },
+      "DISCORD_ALLOWED_ROLE_IDS": {
+        "type": "string",
+        "title": "Allowed role IDs",
+        "description": "Optional comma-separated role snowflakes. Empty means anyone in an allowlisted channel."
+      },
+      "GROK_WEBHOOK_URL": {
+        "type": "string",
+        "title": "Grok Bot webhook URL",
+        "description": "Optional. HTTPS URL the gateway POSTs inbound Discord events to. Required together with GROK_WEBHOOK_SECRET. Loopback HTTP is allowed only for local development."
+      },
+      "GROK_WEBHOOK_SECRET": {
+        "type": "string",
+        "title": "Webhook secret",
+        "description": "Required when GROK_WEBHOOK_URL is set. HMAC-SHA256 of the JSON body and Authorization: Bearer. Never commit this value."
+      },
+      "BOT_NAME_PREFIX": {
+        "type": "string",
+        "title": "Bot name prefix",
+        "description": "Optional spoken name. Matched as a whole word anywhere in the message after mentions are stripped. Defaults to the Discord username."
+      }
+    },
+    "required": ["DISCORD_TOKEN", "DISCORD_GUILD_ID", "DISCORD_CHANNEL_IDS"]
+  }
+}
