@@ -1,0 +1,10 @@
+export const publicError = "Something broke on my side. Not saying more here.";
+export const discordChunkLimit = 1900;
+export const followUpWindowMs = 15 * 60 * 1000;
+export const defaultRateWindowMs = 3 * 60 * 1000;
+export const defaultRatePerUser = 6;
+export const defaultRatePerChannel = 15;
+export const webhookTimeoutMs = 15_000;
+export const recentHistoryLimit = 15;
+export const maxHistoryLineChars = 400;
+export const supervisorRestartDelayMs = 2_000;
