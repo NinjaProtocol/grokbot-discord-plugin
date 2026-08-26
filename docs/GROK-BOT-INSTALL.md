@@ -356,7 +356,7 @@ Proof pair to ask the operator for: a line that addresses the bot by name should
 Use this table when the install is not clean. These are the failures that happen when a step above was skipped or substituted.
 
 | Symptom | Likely cause | What to do |
-| --- | --- |
+| --- | --- | --- |
 | SearchPlugins for `discord` / `grok-discord` is empty | Plugin is not in the marketplace | Copy the repo from an account that can read `NinjaProtocol/grokbot-discord`. Do not ask the operator to clone. Do not use Railway. |
 | GitHub repo URL 404s | Repo is private or the current GitHub account cannot read it | Use an account with access. The 404 is not evidence the plugin does not exist. |
 | No Plugins → Configure card | Marketplace card does not exist | secret-request for the token; guild/channel IDs in the launch wrapper. |

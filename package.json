@@ -7,9 +7,9 @@
   "author": "NinjaProtocol",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NinjaProtocol/grokbot-discord-plugin-plugin.git"
+    "url": "git+https://github.com/NinjaProtocol/grokbot-discord.git"
   },
-  "homepage": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "homepage": "https://github.com/NinjaProtocol/grokbot-discord",
   "engines": {
     "node": ">=20.19.0"
   },
@@ -27,8 +27,7 @@
     ".grok-plugin",
     "docs",
     "README.md",
-    "LICENSE",
-    "logo.png"
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",

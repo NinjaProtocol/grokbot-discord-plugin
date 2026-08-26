@@ -7,7 +7,7 @@ Talk to your Grok Bot from Discord. It only replies in the server channels you c
 Paste this into a chat with your Grok Bot:
 
 ```
-Install Discord for Grok Bot from https://github.com/NinjaProtocol/grokbot-discord-plugin and connect it. Follow docs/GROK-BOT-INSTALL.md in that repo exactly.
+Install Discord for Grok Bot from https://github.com/NinjaProtocol/grokbot-discord and connect it. Follow docs/GROK-BOT-INSTALL.md in that repo exactly.
 ```
 
 Or: **Plugins** → **Discord for Grok Bot** → **Install**, then type **connect Discord**.

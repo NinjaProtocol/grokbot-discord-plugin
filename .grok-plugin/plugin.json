@@ -6,10 +6,9 @@
     "name": "NinjaProtocol",
     "url": "https://github.com/NinjaProtocol"
   },
-  "homepage": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
-  "repository": "https://github.com/NinjaProtocol/grokbot-discord-plugin",
+  "homepage": "https://github.com/NinjaProtocol/grokbot-discord",
+  "repository": "https://github.com/NinjaProtocol/grokbot-discord",
   "license": "MIT",
-  "logo": "logo.png",
   "keywords": ["discord", "grok-bot", "mcp", "gateway"],
   "skills": "./skills/",
   "mcpServers": "./mcp.json"
